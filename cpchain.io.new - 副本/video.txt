@@ -1,0 +1,6 @@
+[
+{"image_url":"./img/video/1.png", "link":"https://www.youtube.com/embed/5rzlVd7iMc0"},
+{"image_url":"./img/video/2.png", "link":"https://www.youtube.com/embed/W-oyLEJyB3M"},
+{"image_url":"./img/video/3.png", "link":"https://www.youtube.com/embed/I3WAe3PBs9w"},
+{"image_url":"./img/video/4.png", "link":"https://www.youtube.com/embed/kqGmFynA8Eg"}
+]

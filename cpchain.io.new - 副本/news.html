@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.min.css?v=1.0"/>
+	</head>
+	<body>
+		<Header>
+			<div class="headerAll linkNav">
+				<div class="logo">
+					<img src="img/CPChain_newlogo_无字.png"/>
+				</div>
+				<ul>
+					<a href="index.html#what"><li>CPChain</li></a>
+					<a href="index.html#vision"><li>Vision</li></a>
+					<a href="index.html#team"><li>Team</li></a>
+					<a href="index.html#map"><li>Roadmap</li></a>
+					<a href="index.html#application"><li>Application</li></a>
+					<a href="news.html"><li>News</li></a>
+					<a href="https://jinshuju.net/f/3BFORd" target="_black"><li>Contact</li></a>
+				</ul>
+			</div>
+		</Header>
+		<section class="newsBanner">
+			<div class="newsBannerAll" >
+				<div class="newBannerTitle">
+					<div class="newsBannerLeft">News & Announcement</div>
+					<a href="https://medium.com/@cpchain" target="_black">
+						<div class="newsBannerRight">See All &nbsp;&nbsp;></div>
+					</a>
+				</div>
+				<div id="d_tab29">
+					<ul class="d_img">				 
+	
+					</ul>	
+			
+					<ul class="d_menu">
+
+					</ul>
+			
+					<p class="d_prev"><img src="" alt=""></p>
+			
+					<p class="d_next"><img src="" alt=""></p>
+			
+				</div>
+			</div>
+		</section>
+		<section class="newMedia">
+			<div class="newMediaAll">
+				<div class="newBannerTitle" style="margin-bottom: 48px;">
+					<div class="newsBannerLeft">Media</div>
+					<a href="https://www.youtube.com/channel/UC3y901Z6TUYi3ciW2tDiAtg/videos" target="_black">
+						<div class="newsBannerRight">See All &nbsp;&nbsp;></div>
+					</a>
+				</div>
+				<div class="newMediaBar">
+
+				</div>
+			</div>			
+		</section>
+		<footer>
+			<div class="footerTop">
+				<div class="footerTopAll">
+					<div class="footerTopEmail">
+						<img src="img/Email.png"/>
+						<span>info@cpchain.io</span>
+					</div>
+					<div class="footerTopsmallImg">
+						<a href="https://github.com/CPChain" target="_blank">
+							<img src="img/git.png"/>
+						</a>
+						<a href="https://twitter.com/cpchain_io" target="_blank">
+							<img src="img/twi.png"/>
+						</a>
+						<a href="https://medium.com/search?q=cpchain" target="_blank">
+							<img src="img/med.png"/>
+						</a>
+						<a href="https://www.reddit.com/r/CPChain_Official/" target="_blank">
+							<img src="img/red.png"/>
+						</a>
+						<a href="https://web.telegram.org/#/im?p=@CPChain" target="_blank">
+							<img src="img/tele.png"/>
+						</a>
+						<a href="https://discordapp.com/invite/X8WxPst" target="_blank">
+							<img src="img/dis.png"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footerBottomAll">
+				2018 CPChain Team © All rights reserved.
+			</div>
+		</footer>
+		<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/jquery.DB_rotateRollingBanner.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/index.js"></script>
+		<script type="text/javascript">
+			// 跑马灯数据和效果
+			var readjson = function ()
+			{
+			    $.getJSON ("news.txt", function (data)
+			    {
+			        
+			        {
+			            $ (".d_img").html ('<li class="d_pos1"><a href='+ data[0].link +'><img src='+ data[0].image_url+' alt=""/></a></li>' +
+
+						'<li class="d_pos2"><a href='+data[1].link+'><img src='+data[1].image_url+' alt=""/></a></li>'+
+
+						'<li class="d_pos3"><a href='+data[2].link+'><img src='+data[2].image_url+' alt=""/></a></li>' +
+
+						'<li class="d_pos4"><a href='+data[3].link+'><img src='+data[3].image_url+' alt=""/></a></li>' +
+
+						'<li class="d_pos5"><a href='+data[4].link+'><img src='+data[4].image_url+' alt=""/></a></li>')
+			        };
+
+			        $('#d_tab29').find('li')
+
+			    	$('#d_tab29').DB_rotateRollingBanner({
+
+						key:"c37080",            
+				
+						moveSpeed:400,           
+				
+						autoRollingTime:3000      
+				
+					})
+			    })  
+			}
+			readjson(); 
+
+			// 视频数据
+			var newsJson = function(){
+				$.getJSON ("video.txt", function (data)
+			    {
+			        $.each(data,function(i,item){
+			        	// $ (".newMediaBar").append ('<a href='+data[i].link+' target="_black"><div class="newMediaKuai"><img src='+data[i].image_url +' alt="" /></div></a>')
+                        $ (".newMediaBar").append ('<div class="newMediaKuai"><iframe  width="450" height="288" src="'+data[i].link+'" frameborder="0"  allow="autoplay; encrypted-media" allowfullscreen></iframe></div>')
+			        })
+			        
+			    })  
+			}  
+			newsJson();
+		</script>
+	</body>
+</html>

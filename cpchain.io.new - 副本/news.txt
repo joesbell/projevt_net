@@ -1,0 +1,7 @@
+[
+{"image_url":"./img/news/1.png", "link":"https://medium.com/@cpchain/cpchain-community-update-4-0-af890f94ec79"},
+{"image_url":"./img/news/2.png", "link":"https://medium.com/@cpchain/cpchain-partnership-and-conceptual-video-f0ec0f90c3c1"},
+{"image_url":"./img/news/3.png", "link":"https://medium.com/@cpchain/cpchain-visual-art-season-arrives-c7f597373105"},
+{"image_url":"./img/news/4.png", "link":"https://medium.com/@cpchain/cpchain-and-intelligent-driving-solutions-for-the-transportation-industry-48d570857cd9"},
+{"image_url":"./img/news/5.png", "link":"https://medium.com/@cpchain/first-ama-of-cpchain-149582b720dd?source=user_profile---------12-------------------"}
+]
